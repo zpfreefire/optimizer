@@ -31,19 +31,25 @@ from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-def fun(x1, x2):
+def bukin_function(x1, x2):
     return 100 * np.sqrt(abs(x2 - 0.01 * x1 * x1)) + 0.01 * abs(x1 + 10)
+
+
+def cross_in_tray_function(x1, x2):
+    # return (-0.0001 * (abs(np.sin(x1) * np.sin(x2) * np.exp(abs(100 - ((np.sqrt(x1 * x1 + x2 * x2)) / np.pi)))) + 1)) ** 0.1
+    x = abs(100 - (np.sqrt(x1 ** 2 + x2 ** 2) / np.pi))
+    return -0.0001 * ((np.sin(x1) * np.sin(x2)) ** x + 1) ** 0.1
 
 
 fig = plt.figure()
 ax = Axes3D(fig)
-X = np.arange(-15, -5, 0.1)
-Y = np.arange(-3, 3, 0.1)
+X = np.arange(-10, -10, 0.1)
+Y = np.arange(-10, 10, 0.1)
 X, Y = np.meshgrid(X, Y)
-# R = fun(X, Y)
-Z = fun(X, Y)
+Z = cross_in_tray_function(X, Y)
 
 # 具体函数方法可用 help(function) 查看，如：help(ax.plot_surface)
-ax.plot_surface(Z, X, Y, rstride=1, cstride=1, cmap='rainbow')
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='rainbow')
+ax.set_title("cross in tray function")
 
 plt.show()
