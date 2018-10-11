@@ -102,9 +102,9 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
 # Function to be Minimized. Solution ->  f(-10, 1) = 0
 def target_function(variables_values=[0, 0]):
     # bukin 0
-    # func_value = 100 * np.sqrt(
-    #     abs(variables_values[1] - 0.01 * variables_values[0] * variables_values[0])) + 0.01 * abs(
-    #     variables_values[0] + 10)
+    func_value = 100 * np.sqrt(
+        abs(variables_values[1] - 0.01 * variables_values[0] * variables_values[0])) + 0.01 * abs(
+        variables_values[0] + 10)
 
     # eggholder  +_512 -959.6407 ok
     # func_value = - (variables_values[1] + 47) * np.sin(np.sqrt(abs(variables_values[1] + (variables_values[0] / 2) + 47))) - variables_values[0] * np.sin(
@@ -118,15 +118,15 @@ def target_function(variables_values=[0, 0]):
     # func_value = 418.9829 * len(variables_values) - sum
 
     # michalewicz
-    sum = 0
-    fitness = 0
-    m = 10
-    for (i, x) in enumerate(variables_values, start=1):
-        sum = sum + np.sin(x) * np.sin((i * (x ** 2)) / np.pi) ** (2 * m)
-    func_value = -sum
+    # sum = 0
+    # fitness = 0
+    # m = 10
+    # for (i, x) in enumerate(variables_values, start=1):
+    #     sum = sum + np.sin(x) * np.sin((i * (x ** 2)) / np.pi) ** (2 * m)
+    # func_value = -sum
 
     return func_value
 
 
-cs = cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5, min_values=[0, 0],
-                   max_values=[np.pi, np.pi], iterations=200)
+cs = cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5, min_values=[-15, -3],
+                   max_values=[-5, 3], iterations=200)
