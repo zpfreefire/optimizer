@@ -5,6 +5,8 @@ import os
 import pandas as pd
 import random
 
+import function as func
+
 
 # Function: Initialize Variables
 def initial_position(birds=3, min_values=[5, 5], max_values=[5, 5]):
@@ -76,11 +78,13 @@ def update_positions(position, discovery_rate=0.25, min_values=[-5, -5], max_val
 
 # CS Function
 def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5, min_values=[-5, -5],
-                  max_values=[5, 5], iterations=50):
+                  max_values=[5, 5], iterations=50, optimum=0.0):
     count = 0
     position = initial_position(birds=birds, min_values=min_values, max_values=max_values)
     best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
+    x = abs(best_ind[-1] - optimum)
+    # print(x)
     while count <= iterations:
         print("Iteration = ", count, " of ", iterations, " f(x) = ", best_ind[-1])
 
@@ -94,6 +98,8 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
             best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
         count = count + 1
+        # x = abs(best_ind[-1] - optimum)
+        # print(x)
 
     print(best_ind)
     return best_ind
@@ -101,26 +107,13 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
 
 # Function to be Minimized. Solution ->  f(-10, 1) = 0
 def target_function(variables_values=[0, 0]):
-    d = len(variables_values)
-    a, b, c = 20, 0.2, 2 * np.pi
-    sum1 = 0
-    sum2 = 0
-    for i in range(d):
-        xi = variables_values[i]
-        sum1 = sum1 + xi ** 2
-        sum2 = sum2 + np.cos(c * xi)
-    term1 = -a * np.exp(-b * np.sqrt(sum1 / d))
-    term2 = -np.exp(sum2 / d)
-
-    y = term1 + term2 + a + np.exp(1)
-
-    return y
+    return func.target_function(variables_values)
 
 
 def main():
     cs = cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
-                       min_values=[-32.768, -32.768, -32.768, -32.768],
-                       max_values=[32.768, 32.768, 32.768, 32.768], iterations=500)
+                       min_values=[0]*16,
+                       max_values=[np.pi]*16, iterations=500)
 
 
 main()
