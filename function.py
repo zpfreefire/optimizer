@@ -2,7 +2,7 @@ import numpy as np
 
 
 def target_function(array):
-    fitness = michalewicz(array)
+    fitness = stybtang(array)
     return fitness
 
 

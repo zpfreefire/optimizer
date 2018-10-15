@@ -112,8 +112,8 @@ def target_function(variables_values=[0, 0]):
 
 def main():
     cs = cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
-                       min_values=[0]*16,
-                       max_values=[np.pi]*16, iterations=500)
+                       min_values=[-5]*5,
+                       max_values=[5]*5, iterations=200)
 
 
 main()
