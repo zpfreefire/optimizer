@@ -1,3 +1,4 @@
+import csv
 import math
 
 import numpy as np
@@ -6,6 +7,7 @@ import pandas as pd
 import random
 
 import function as func
+import datetime
 
 
 # Function: Initialize Variables
@@ -83,8 +85,6 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
     position = initial_position(birds=birds, min_values=min_values, max_values=max_values)
     best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
-    x = abs(best_ind[-1] - optimum)
-    # print(x)
     while count <= iterations:
         print("Iteration = ", count, " of ", iterations, " f(x) = ", best_ind[-1])
 
@@ -93,6 +93,8 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
                                     max_values=max_values)
         position = update_positions(position, discovery_rate=discovery_rate, min_values=min_values,
                                     max_values=max_values)
+        if count == 50:
+            pass
 
         if best_ind[-1] > position.iloc[position['Fitness'].idxmin(), :][-1]:
             best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
@@ -100,9 +102,8 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
         count = count + 1
         # x = abs(best_ind[-1] - optimum)
         # print(x)
-
     print(best_ind)
-    return best_ind
+    # return best_ind
 
 
 # Function to be Minimized. Solution ->  f(-10, 1) = 0
@@ -111,9 +112,9 @@ def target_function(variables_values=[0, 0]):
 
 
 def main():
-    cs = cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
-                       min_values=[0] * 2,
-                       max_values=[np.pi] * 2, iterations=200)
+    cuckoo_search(birds=50, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
+                  min_values=[0] * 2,
+                  max_values=[np.pi] * 2, iterations=100)
 
 
 main()
