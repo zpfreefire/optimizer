@@ -84,14 +84,14 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
     count = 0
     position = initial_position(birds=birds, min_values=min_values, max_values=max_values)
     best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
-    tim = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
-    arr = position[[0,1]].values
-    filename = ("../statistics/cs/initial_position/%s.csv"%tim)
-    f = open(filename, "w", newline="")
-    writer = csv.writer(f)
-    for row in arr:
-        writer.writerow(row)
-    f.close()
+    # tim = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
+    # arr = position[[0,1]].values
+    # filename = ("../statistics/cs/initial_position/%s.csv"%tim)
+    # f = open(filename, "w", newline="")
+    # writer = csv.writer(f)
+    # for row in arr:
+    #     writer.writerow(row)
+    # f.close()
     while count <= iterations:
         print("Iteration = ", count, " of ", iterations, " f(x) = ", best_ind[-1])
 
@@ -100,14 +100,14 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
                                     max_values=max_values)
         position = update_positions(position, discovery_rate=discovery_rate, min_values=min_values,
                                     max_values=max_values)
-        if count == 50:
-            arr = position[[0, 1]].values
-            filename = ("../statistics/cs/after50/%s.csv" % tim)
-            f = open(filename, "w", newline="")
-            writer = csv.writer(f)
-            for row in arr:
-                writer.writerow(row)
-            f.close()
+        # if count == 50:
+        #     arr = position[[0, 1]].values
+        #     filename = ("../statistics/cs/after50/%s.csv" % tim)
+        #     f = open(filename, "w", newline="")
+        #     writer = csv.writer(f)
+        #     for row in arr:
+        #         writer.writerow(row)
+        #     f.close()
 
         if best_ind[-1] > position.iloc[position['Fitness'].idxmin(), :][-1]:
             best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
@@ -115,13 +115,13 @@ def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1
         count = count + 1
         # x = abs(best_ind[-1] - optimum)
         # print(x)
-    arr = position[[0, 1]].values
-    filename = ("../statistics/cs/final_position/%s.csv" % tim)
-    f = open(filename, "w", newline="")
-    writer = csv.writer(f)
-    for row in arr:
-        writer.writerow(row)
-    f.close()
+    # arr = position[[0, 1]].values
+    # filename = ("../statistics/cs/final_position/%s.csv" % tim)
+    # f = open(filename, "w", newline="")
+    # writer = csv.writer(f)
+    # for row in arr:
+    #     writer.writerow(row)
+    # f.close()
     print(best_ind)
     # return best_ind
 

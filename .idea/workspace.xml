@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f618083-a196-4520-a880-8463e2886127" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/liuxiao.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/liuxiao.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/simulated_annealing/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/simulated_annealing/example1.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/simulated_annealing/simAnneal_FUNC.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cuckoo_search/cuckoo.py" afterPath="$PROJECT_DIR$/cuckoo_search/cuckoo.py" />
-      <change beforePath="$PROJECT_DIR$/function.py" afterPath="$PROJECT_DIR$/function.py" />
-      <change beforePath="$PROJECT_DIR$/images/statistics/after50.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/statistics/final.png" afterPath="$PROJECT_DIR$/images/statistics/michalewicz/final.png" />
-      <change beforePath="$PROJECT_DIR$/images/statistics/initial.png" afterPath="$PROJECT_DIR$/images/statistics/michalewicz/initial.png" />
-      <change beforePath="$PROJECT_DIR$/statistics/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/statistics/cs/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/visualizer/contour.py" afterPath="$PROJECT_DIR$/visualizer/contour.py" />
-      <change beforePath="$PROJECT_DIR$/visualizer/func_image.py" afterPath="$PROJECT_DIR$/visualizer/func_image.py" />
-      <change beforePath="$PROJECT_DIR$/water_wave_optimization/waterwave.py" afterPath="$PROJECT_DIR$/water_wave_optimization/waterwave.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,26 +21,15 @@
     <SUITE FILE_PATH="coverage/optimizer$contour.coverage" NAME="contour Coverage Results" MODIFIED="1539768773882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualizer" />
     <SUITE FILE_PATH="coverage/optimizer$function.coverage" NAME="function Coverage Results" MODIFIED="1539334824894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimizer$waterwave.coverage" NAME="waterwave Coverage Results" MODIFIED="1539339218017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/water_wave_optimization" />
+    <SUITE FILE_PATH="coverage/optimizer$example1.coverage" NAME="example1 Coverage Results" MODIFIED="1539774850962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simulated_annealing" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="func_image.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visualizer/func_image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contour.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contour.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualizer/contour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="314">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -55,24 +37,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="after50.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/after50.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="example1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simulated_annealing/example1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1009">
+              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+              <folding>
+                <element signature="e#219#230#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="final.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/final.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initial.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/initial.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="simAnneal_FUNC.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simulated_annealing/simAnneal_FUNC.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="107" column="28" lean-forward="true" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -96,6 +81,7 @@
       <find>initial</find>
       <find>initial_position</find>
       <find>mich</find>
+      <find>result</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,8 +95,10 @@
         <option value="$PROJECT_DIR$/visualizer/func_image.py" />
         <option value="$PROJECT_DIR$/water_wave_optimization/waterwave.py" />
         <option value="$PROJECT_DIR$/function.py" />
-        <option value="$PROJECT_DIR$/cuckoo_search/cuckoo.py" />
         <option value="$PROJECT_DIR$/visualizer/contour.py" />
+        <option value="$PROJECT_DIR$/cuckoo_search/cuckoo.py" />
+        <option value="$PROJECT_DIR$/simulated_annealing/simAnneal_FUNC.py" />
+        <option value="$PROJECT_DIR$/simulated_annealing/example1.py" />
       </list>
     </option>
   </component>
@@ -150,87 +138,7 @@
             <path>
               <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="cuckoo_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="ackley" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="eggholder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="michalewicz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="after50" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="final_position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="initial_position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="visualizer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
-              <item name="water_wave_optimization" type="462c0819:PsiDirectoryNode" />
+              <item name="simulated_annealing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.contour">
+  <component name="RunManager" selected="Python.example1">
     <configuration name="contour" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,6 +209,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="example1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulated_annealing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimizer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulated_annealing/example1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="func_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -315,25 +242,6 @@
       <module name="optimizer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualizer/func_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="function" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optimizer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,18 +268,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.cuckoo" />
-      <item index="1" class="java.lang.String" itemvalue="Python.function" />
-      <item index="2" class="java.lang.String" itemvalue="Python.waterwave" />
-      <item index="3" class="java.lang.String" itemvalue="Python.contour" />
-      <item index="4" class="java.lang.String" itemvalue="Python.func_image" />
+      <item index="1" class="java.lang.String" itemvalue="Python.waterwave" />
+      <item index="2" class="java.lang.String" itemvalue="Python.contour" />
+      <item index="3" class="java.lang.String" itemvalue="Python.func_image" />
+      <item index="4" class="java.lang.String" itemvalue="Python.example1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.contour" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cuckoo" />
-        <item index="2" class="java.lang.String" itemvalue="Python.func_image" />
-        <item index="3" class="java.lang.String" itemvalue="Python.waterwave" />
-        <item index="4" class="java.lang.String" itemvalue="Python.function" />
+        <item index="0" class="java.lang.String" itemvalue="Python.example1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.contour" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cuckoo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.func_image" />
+        <item index="4" class="java.lang.String" itemvalue="Python.waterwave" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539675697476</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="history data visualized">
+      <created>1539768892407</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1539768892407</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -453,16 +368,16 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28644502" sideWeight="0.5028612" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="0" y="0" width="310" height="677" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28644502" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2723785" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21173105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3090129" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22389127" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -513,7 +428,8 @@
     <MESSAGE value="contour" />
     <MESSAGE value="get initial/after50 gen/final position" />
     <MESSAGE value="position" />
-    <option name="LAST_COMMIT_MESSAGE" value="position" />
+    <MESSAGE value="history data visualized" />
+    <option name="LAST_COMMIT_MESSAGE" value="history data visualized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,49 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2964">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cuckoo_search/cuckoo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualizer/func_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/after50.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/final_position.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/initial_position.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/functions/michalewicz.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -635,7 +508,35 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/eggholder/after50.png">
+    <entry file="file://$USER_HOME$/venv/Cry/lib/python3.6/site-packages/matplotlib/contour.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1509" column="0" lean-forward="false" selection-start-line="1509" selection-start-column="0" selection-end-line="1509" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualizer/func_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/initial_position.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/after50.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/ackley/final_position.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -645,25 +546,12 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/eggholder/after50.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/images/statistics/eggholder/initial_position.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Cry/lib/python3.6/site-packages/matplotlib/contour.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1509" column="0" lean-forward="false" selection-start-line="1509" selection-start-column="0" selection-end-line="1509" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/initial.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/final.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -673,12 +561,65 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/final.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/statistics/michalewicz/initial.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cuckoo_search/cuckoo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualizer/contour.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="314">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="83" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulated_annealing/SA_min0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulated_annealing/simAnneal_FUNC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="107" column="28" lean-forward="true" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulated_annealing/example1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1009">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding>
+            <element signature="e#219#230#0" expanded="true" />
           </folding>
         </state>
       </provider>
