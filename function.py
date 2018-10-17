@@ -2,7 +2,7 @@ import numpy as np
 
 
 def target_function(array):
-    fitness = michalewicz(array)
+    fitness = eggholder(array)
     return fitness
 
 
@@ -30,8 +30,10 @@ def ackley(array, a=20, b=0.2, c=2 * np.pi):
 
     return fitness
 
+
 def alpine2(array):
     return np.sqrt(array[0]) * np.sqrt(array[1]) * np.sin(array[0]) * np.sin(array[1])
+
 
 def bukin6(array):
     '''
@@ -44,6 +46,7 @@ def bukin6(array):
 
     fitness = term1 + term2
     return fitness
+
 
 def camel3(array):
     '''
@@ -76,9 +79,10 @@ def crossit(array):
     at d=2 : xi ∈ [-10, 10] , f([+/- 1.3491,+/- 1.3491]) = -2.0626118504479614
     '''
     term1 = np.sin(array[0]) * np.sin(array[1])
-    term2 = np.exp(abs(100 - np.sqrt(array[0] ** 2 + array[1] ** 2)/ np.pi))
+    term2 = np.exp(abs(100 - np.sqrt(array[0] ** 2 + array[1] ** 2) / np.pi))
     fitness = -0.0001 * (abs(term1 * term2) + 1) ** 0.1
     return fitness
+
 
 def easom(array):
     '''
@@ -89,6 +93,7 @@ def easom(array):
     fitness = term1 * term2
     return fitness
 
+
 def eggholder(array):
     '''
     at d=2 : xi ∈ [-512, 512] , f([512,404.2319]) = -959.6406627106155
@@ -96,6 +101,7 @@ def eggholder(array):
     z = - (array[1] + 47) * np.sin(np.sqrt(abs(array[1] + (array[0] / 2) + 47))) - array[0] * np.sin(
         np.sqrt(abs(array[0] - (array[1] + 47))))
     return z
+
 
 def griewank(array):
     '''
@@ -155,6 +161,7 @@ def levy13(array):
     fitness = term1 + term2 + term3
     return fitness
 
+
 def michalewicz(array):  # for the number of Dimension is 2
     '''
     at d=2 : xi ∈ [0, π] , f([2.20,1.57]) = -1.801140718473825
@@ -166,6 +173,7 @@ def michalewicz(array):  # for the number of Dimension is 2
         sum = sum + np.sin(x) * np.sin((i * (x ** 2)) / np.pi) ** (2 * m)
     fitness = -sum
     return fitness
+
 
 def rastrigin(array):
     '''
@@ -180,6 +188,7 @@ def rastrigin(array):
         sum = sum + x ** 2 - 10 * np.cos(2 * np.pi * x)
     fitness = 10.0 * len(array) + sum
     return fitness
+
 
 def rosenbrock(array):
     '''
@@ -196,6 +205,7 @@ def rosenbrock(array):
 
     fitness = sum
     return fitness
+
 
 def schaffer2(array):
     '''
@@ -215,6 +225,7 @@ def schaffer4(array):
     fitness = 0.5 + term1 / term2
     return fitness
 
+
 def schwefel(array):
     '''
     at d=2 : xi ∈ [-500, 500] , f([420.9687,420.9687]) = 2.545567497236334e-05
@@ -226,6 +237,7 @@ def schwefel(array):
         sum = sum + x * np.sin(np.sqrt(np.abs(x)))
     fitness = 418.9829 * len(array) - sum
     return fitness
+
 
 def shubert(array):
     sum1 = 0
@@ -267,7 +279,6 @@ def stybtang(array):
 
     return fitness
 
-
 # print(ackley([0,0,0,0,0]))
 # print(alpine2())                       未测
 # print(bukin6([-10, 1]))
@@ -289,4 +300,3 @@ def stybtang(array):
 # print(shubert([]))                    error x*没有给取值
 # print(sphere([0, 0, 0, 0, 0]))
 # print(stybtang([-2.903534, -2.903534, -2.903534, -2.903534, -2.903534]))
-
