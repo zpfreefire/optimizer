@@ -31,20 +31,19 @@ def func2(w):
     # x, y = w
     # fxy = y * np.sin(2 * np.pi * x) + x * np.cos(2 * np.pi * y)
     # return fxy
-    return fn.michalewicz(w)
-
+    return fn.stybtang(w)
 
 
 def run_draw():
-
     targ = SimAnneal(target_text='min')
     init = sys.maxsize
-    xyRange = [[0, np.pi], [0, np.pi]]
+    xyRange = [[-5, 5], [-5, 5]]
     t_start = time()
 
     calculate = OptSolution(Markov_chain=1000, result=init, val_nd=[0, 0])
     output = calculate.soulution(SA_newV=targ.newVar, SA_preV=targ.preVar, SA_juge=targ.juge,
                                  juge_text='min', ValueRange=xyRange, func=func2)
+
     t_end = time()
     # print(city_pos)
     print('Running %.4f seconds' % (t_end - t_start))
@@ -63,7 +62,7 @@ def run_draw():
     x, y, z = output[0][0], output[0][1], output[1]
     ax.scatter(x, y, z, c='r', marker='o')
 
-    plt.savefig('SA_min0.png')
+    #plt.savefig('SA_min0.png')
     plt.show()
 
 
