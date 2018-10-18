@@ -42,11 +42,11 @@ class TestFunction:
 
     @staticmethod
     def F1(x):
-        y = np.zeros(x.shape[0])
-        for i in range(x.shape[0]):
-            y[i] = (x[i] ** 2).sum()
-        return y
-        #return fn.crossit(x)
+        # y = np.zeros(x.shape[0])
+        # for i in range(x.shape[0]):
+        #     y[i] = (x[i] ** 2).sum()
+        # return y
+        return fn.crossit(x)
 
 
 def test():
