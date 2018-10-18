@@ -98,5 +98,5 @@ def target_function(variables_values=[0, 0]):
     return fn.michalewicz(variables_values)
 
 
-ba = bat_algorithm(swarm_size=50, min_values=[-5.12, -5.12], max_values=[5.12, 5.12],
-                   iterations=100, alpha=1.0, gama=0.8, fmin=0, fmax=2)
+ba = bat_algorithm(swarm_size=25, min_values=[0, 0], max_values=[np.pi, np.pi],
+                   iterations=200, alpha=1.0, gama=0.8, fmin=0, fmax=2)
