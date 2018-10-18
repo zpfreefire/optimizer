@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f618083-a196-4520-a880-8463e2886127" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ant_lion_optimizer/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ant_lion_optimizer/ant_lion.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/firefly_algorithm/firefly.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/whale_optimization/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/whale_optimization/whale.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/firefly_algorithm/firefly_algorithm.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/flower_pollination/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/flower_pollination/flower.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/salp_swarm/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/salp_swarm/salp_swarm.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/grey_wolf_optimization/grey_wolf.py" afterPath="$PROJECT_DIR$/grey_wolf_optimization/grey_wolf.py" />
+      <change beforePath="$PROJECT_DIR$/firefly_algorithm/firefly.py" afterPath="$PROJECT_DIR$/firefly_algorithm/firefly.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,37 +21,28 @@
     <SUITE FILE_PATH="coverage/optimizer$bat.coverage" NAME="bat Coverage Results" MODIFIED="1539850430880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bat_algorithm" />
     <SUITE FILE_PATH="coverage/optimizer$function.coverage" NAME="function Coverage Results" MODIFIED="1539334824894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimizer$whale.coverage" NAME="whale Coverage Results" MODIFIED="1539852187310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/whale_optimization" />
+    <SUITE FILE_PATH="coverage/optimizer$flower.coverage" NAME="flower Coverage Results" MODIFIED="1539854217628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flower_pollination" />
     <SUITE FILE_PATH="coverage/optimizer$example1.coverage" NAME="example1 Coverage Results" MODIFIED="1539832066583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simulated_annealing" />
     <SUITE FILE_PATH="coverage/optimizer$TestFunction.coverage" NAME="TestFunction Coverage Results" MODIFIED="1539848108873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moth_flame" />
     <SUITE FILE_PATH="coverage/optimizer$func_image.coverage" NAME="func_image Coverage Results" MODIFIED="1539683373930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualizer" />
     <SUITE FILE_PATH="coverage/optimizer$contour.coverage" NAME="contour Coverage Results" MODIFIED="1539768773882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visualizer" />
-    <SUITE FILE_PATH="coverage/optimizer$cuckoo.coverage" NAME="cuckoo Coverage Results" MODIFIED="1539849877735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cuckoo_search" />
     <SUITE FILE_PATH="coverage/optimizer$moth_flame.coverage" NAME="moth_flame Coverage Results" MODIFIED="1539850426484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moth_flame" />
+    <SUITE FILE_PATH="coverage/optimizer$cuckoo.coverage" NAME="cuckoo Coverage Results" MODIFIED="1539852966057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cuckoo_search" />
     <SUITE FILE_PATH="coverage/optimizer$MFO.coverage" NAME="MFO Coverage Results" MODIFIED="1539848058475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/moth_flame" />
     <SUITE FILE_PATH="coverage/optimizer$grey_wolf.coverage" NAME="grey_wolf Coverage Results" MODIFIED="1539852066265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grey_wolf_optimization" />
     <SUITE FILE_PATH="coverage/optimizer$batAlgorithm.coverage" NAME="batAlgorithm Coverage Results" MODIFIED="1539849586380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bat_algorithm" />
     <SUITE FILE_PATH="coverage/optimizer$waterwave.coverage" NAME="waterwave Coverage Results" MODIFIED="1539339218017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/water_wave_optimization" />
+    <SUITE FILE_PATH="coverage/optimizer$firefly.coverage" NAME="firefly Coverage Results" MODIFIED="1539852932455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/firefly_algorithm" />
+    <SUITE FILE_PATH="coverage/optimizer$firefly_algorithm.coverage" NAME="firefly_algorithm Coverage Results" MODIFIED="1539852822631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/firefly_algorithm" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="function.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
+            <state relative-caret-position="4455">
               <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ant_lion.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ant_lion_optimizer/ant_lion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="185" column="96" lean-forward="false" selection-start-line="185" selection-start-column="96" selection-end-line="185" selection-end-column="96" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +50,18 @@
       <file leaf-file-name="cuckoo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cuckoo_search/cuckoo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="117" column="11" lean-forward="true" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+            <state relative-caret-position="1278">
+              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flower.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flower_pollination/flower.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -69,9 +70,23 @@
       <file leaf-file-name="firefly.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firefly_algorithm/firefly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1797">
-              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="1680">
+              <caret line="84" column="49" lean-forward="true" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="salp_swarm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/salp_swarm/salp_swarm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2120">
+              <caret line="106" column="96" lean-forward="false" selection-start-line="106" selection-start-column="96" selection-end-line="106" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,6 +113,7 @@
       <find>mich</find>
       <find>result</find>
       <find>cros</find>
+      <find>targe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,8 +140,11 @@
         <option value="$PROJECT_DIR$/simulated_annealing/anneal.py" />
         <option value="$PROJECT_DIR$/grey_wolf_optimization/grey_wolf.py" />
         <option value="$PROJECT_DIR$/whale_optimization/whale.py" />
-        <option value="$PROJECT_DIR$/firefly_algorithm/firefly.py" />
         <option value="$PROJECT_DIR$/ant_lion_optimizer/ant_lion.py" />
+        <option value="$PROJECT_DIR$/firefly_algorithm/firefly_algorithm.py" />
+        <option value="$PROJECT_DIR$/firefly_algorithm/firefly.py" />
+        <option value="$PROJECT_DIR$/salp_swarm/salp_swarm.py" />
+        <option value="$PROJECT_DIR$/flower_pollination/flower.py" />
       </list>
     </option>
   </component>
@@ -180,6 +199,16 @@
             <path>
               <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="optimizer" type="462c0819:PsiDirectoryNode" />
+              <item name="flower_pollination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
+              <item name="salp_swarm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="optimizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
               <item name="statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +240,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -230,26 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.whale">
-    <configuration name="bat" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bat_algorithm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optimizer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bat_algorithm/bat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.flower">
     <configuration name="cuckoo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,39 +280,58 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="grey_wolf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="firefly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grey_wolf_optimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/firefly_algorithm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optimizer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grey_wolf_optimization/grey_wolf.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/firefly_algorithm/firefly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="moth_flame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="firefly_algorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/moth_flame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/firefly_algorithm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optimizer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/moth_flame/moth_flame.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/firefly_algorithm/firefly_algorithm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="flower" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flower_pollination" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optimizer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flower_pollination/flower.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -327,19 +357,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.bat" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cuckoo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.moth_flame" />
-      <item index="3" class="java.lang.String" itemvalue="Python.whale" />
-      <item index="4" class="java.lang.String" itemvalue="Python.grey_wolf" />
+      <item index="0" class="java.lang.String" itemvalue="Python.whale" />
+      <item index="1" class="java.lang.String" itemvalue="Python.firefly_algorithm" />
+      <item index="2" class="java.lang.String" itemvalue="Python.firefly" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cuckoo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.flower" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.whale" />
-        <item index="1" class="java.lang.String" itemvalue="Python.grey_wolf" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bat" />
-        <item index="3" class="java.lang.String" itemvalue="Python.moth_flame" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cuckoo" />
+        <item index="0" class="java.lang.String" itemvalue="Python.flower" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cuckoo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.firefly" />
+        <item index="3" class="java.lang.String" itemvalue="Python.firefly_algorithm" />
+        <item index="4" class="java.lang.String" itemvalue="Python.whale" />
       </list>
     </recent_temporary>
   </component>
@@ -455,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539851583021</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add ant lion optimization">
+      <created>1539852697035</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539852697035</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -465,7 +502,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28644502" sideWeight="0.5028612" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="0" y="0" width="310" height="677" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19053708" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23785166" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -529,7 +566,8 @@
     <MESSAGE value="add moth-flame optimization" />
     <MESSAGE value="add bat algorithm" />
     <MESSAGE value="add grey wolf optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="add grey wolf optimization" />
+    <MESSAGE value="add ant lion optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ant lion optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -784,30 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cuckoo_search/cuckoo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="117" column="11" lean-forward="true" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firefly_algorithm/firefly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1797">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ant_lion_optimizer/ant_lion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
@@ -815,6 +829,60 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly_algorithm/firefly_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4455">
+          <caret line="224" column="33" lean-forward="true" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly_algorithm/firefly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="84" column="49" lean-forward="true" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salp_swarm/salp_swarm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2120">
+          <caret line="106" column="96" lean-forward="false" selection-start-line="106" selection-start-column="96" selection-end-line="106" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cuckoo_search/cuckoo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flower_pollination/flower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

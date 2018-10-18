@@ -31,7 +31,7 @@ class Fireflies:
         for i in range(self.population):
             for j in range(len(self.Value_Min)):
                 self.coordinate.append(random.uniform(self.Value_Min[j], self.Value_Max[j]))
-            self.brightness = fn.targe_function(self.coordinate)
+            self.brightness = fn.target_function(self.coordinate)
             self.fireflies.append(firefly(self.coordinate, self.brightness))
             self.coordinate = []
             self.brightness = 0
@@ -45,7 +45,7 @@ class Fireflies:
 def main():
     # standard = -1.8013
     starttime = datetime.datetime.now()
-    Firefly = Fireflies(0.1, 1, 0.1, 60, 200, [0]*5, [np.pi]*5)
+    Firefly = Fireflies(0.1, 1, 0.1, 60, 200, [0]*2, [np.pi]*2)
 
     most_light = float('inf')
     most_light_coordinate = np.zeros(len(Firefly.Value_Min))
@@ -82,7 +82,7 @@ def main():
                 I = Firefly.fireflies[j].light * np.exp(-Firefly.absorption*distance(firefly_i,Firefly.fireflies[j])**2)
                 if firefly_i.light > I:  # j更亮
                     Firefly.move(firefly_i, Firefly.fireflies[j])
-                firefly_i.light = fn.targe_function(firefly_i.variable)
+                firefly_i.light = fn.target_function(firefly_i.variable)
 
             if firefly_i.light < most_light:
                 most_light = firefly_i.light
