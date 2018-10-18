@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-'''
-======================================
-|           kiterun                  |
-|		   2017/08/11                |
-|		 kiterun@126.com             |
-======================================
-'''
-
 import math
 import sys
 from time import time
@@ -31,13 +21,13 @@ def func2(w):
     # x, y = w
     # fxy = y * np.sin(2 * np.pi * x) + x * np.cos(2 * np.pi * y)
     # return fxy
-    return fn.stybtang(w)
+    return fn.crossit(w)
 
 
 def run_draw():
     targ = SimAnneal(target_text='min')
     init = sys.maxsize
-    xyRange = [[-5, 5], [-5, 5]]
+    xyRange = [[-10, 10], [-10, 10]]
     t_start = time()
 
     calculate = OptSolution(Markov_chain=1000, result=init, val_nd=[0, 0])
@@ -62,7 +52,7 @@ def run_draw():
     x, y, z = output[0][0], output[0][1], output[1]
     ax.scatter(x, y, z, c='r', marker='o')
 
-    #plt.savefig('SA_min0.png')
+    # plt.savefig('SA_min0.png')
     plt.show()
 
 
