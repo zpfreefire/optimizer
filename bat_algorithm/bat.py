@@ -1,6 +1,6 @@
 import math
 
-import numpy  as np
+import numpy as np
 import os
 import pandas as pd
 import random
@@ -8,7 +8,6 @@ import random
 import function as fn
 
 
-# Function: Initialize Variables
 def initial_position(swarm_size=3, min_values=[-5, -5], max_values=[5, 5]):
     position = pd.DataFrame(np.zeros((swarm_size, len(min_values))))
     for i in range(0, len(min_values)):
@@ -27,7 +26,6 @@ def initial_position(swarm_size=3, min_values=[-5, -5], max_values=[5, 5]):
     return position
 
 
-# Function: Updtade Position
 def update_position(position, best_ind, alpha=0.9, gama=0.9, fmin=0, fmax=10, dimensions=2, count=0,
                     min_values=[-5, -5], max_values=[5, 5]):
     position_temp = pd.DataFrame(np.zeros((position.shape[0], position.shape[1])))
@@ -72,7 +70,6 @@ def update_position(position, best_ind, alpha=0.9, gama=0.9, fmin=0, fmax=10, di
     return position, best_ind
 
 
-# BA Function
 def bat_algorithm(swarm_size=3, min_values=[-5, -5], max_values=[5, 5], iterations=50, alpha=0.9, gama=0.9, fmin=0,
                   fmax=10):
     count = 1

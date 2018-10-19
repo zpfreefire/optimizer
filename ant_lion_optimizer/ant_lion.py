@@ -174,9 +174,6 @@ def ant_lion_optimizer(colony_size=5, min_values=[-5, -5], max_values=[5, 5], it
     return elite
 
 
-######################## Part 1 - Usage ####################################
-
-# Function to be Minimized. Solution ->  f(x1, x2) = -1.0316; x1 = 0.0898, x2 = -0.7126 or x1 = -0.0898, x2 = 0.7126
 def target_function(variables_values=[0, 0]):
     func_value = 4 * variables_values[0] ** 2 - 2.1 * variables_values[0] ** 4 + (1 / 3) * variables_values[0] ** 6 + \
                  variables_values[0] * variables_values[1] - 4 * variables_values[1] ** 2 + 4 * variables_values[1] ** 4
