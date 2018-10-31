@@ -8,6 +8,7 @@ import random
 
 import function as func
 import datetime
+import time
 
 
 # Function: Initialize Variables
@@ -30,7 +31,6 @@ def levy_flight(mean):
     return x1 * x2
 
 
-# Function: Replace Bird
 def replace_bird(position, alpha_value=0.01, lambda_value=1.5, min_values=[-5, -5], max_values=[5, 5]):
     random_bird = np.random.randint(position.shape[0], size=1)[0]
     new_solution = pd.DataFrame(np.zeros((1, position.shape[1])))
@@ -88,7 +88,7 @@ def update_positions(position, discovery_rate=0.25, min_values=[-5, -5], max_val
 
 # CS Function
 def cuckoo_search(birds=3, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5, min_values=[-5, -5],
-                  max_values=[5, 5], iterations=50, optimum=0.0):
+                  max_values=[5, 5], iterations=50):
     count = 0
     position = initial_position(birds=birds, min_values=min_values, max_values=max_values)
     best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
@@ -116,9 +116,9 @@ def target_function(variables_values=[0, 0]):
 
 
 def main():
-    cuckoo_search(birds=10, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
-                  min_values=[np.pi] * 5,
-                  max_values=[np.pi] * 5, iterations=200)
+    cuckoo_search(birds=5, discovery_rate=0.25, alpha_value=0.01, lambda_value=1.5,
+                  min_values=[0] * 2,
+                  max_values=[np.pi] * 2, iterations=200)
 
 
 main()

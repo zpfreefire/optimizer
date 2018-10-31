@@ -3,6 +3,7 @@ import numpy  as np
 import math
 import random
 import os
+import time
 
 import function as fn
 
@@ -102,13 +103,11 @@ def whale_optimization_algorithm(hunting_party=5, spiral_param=1, min_values=[-5
     print(leader.iloc[leader['Fitness'].idxmin(), :].copy(deep=True))
     return leader.iloc[leader['Fitness'].idxmin(), :].copy(deep=True)
 
-
-######################## Part 1 - Usage ####################################
-
-# Function to be Minimized. Solution ->  f(x1, x2) = -1.0316; x1 = 0.0898, x2 = -0.7126 or x1 = -0.0898, x2 = 0.7126
 def target_function(variables_values=[0, 0]):
     return fn.michalewicz(variables_values)
 
-
+start = time.clock()
 woa = whale_optimization_algorithm(hunting_party=5, spiral_param=1, min_values=[0, 0], max_values=[np.pi, np.pi],
                                    iterations=200)
+end = time.clock()
+print(end-start)

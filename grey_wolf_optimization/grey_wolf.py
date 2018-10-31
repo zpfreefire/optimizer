@@ -2,6 +2,7 @@ import numpy  as np
 import os
 import pandas as pd
 import random
+import function as fn
 
 
 # Function: Initialize Variables
@@ -103,7 +104,6 @@ def update_position(position, alpha, beta, delta, a_linear_component=2, min_valu
     return updated_position
 
 
-# GWO Function
 def grey_wolf_optimizer(pack_size=5, min_values=[-5, -5], max_values=[5, 5], iterations=50):
     count = 0
     position = initial_position(pack_size=pack_size, min_values=min_values, max_values=max_values)
@@ -126,9 +126,7 @@ def grey_wolf_optimizer(pack_size=5, min_values=[-5, -5], max_values=[5, 5], ite
 
 
 def target_function(variables_values=[0, 0]):
-    func_value = 4 * variables_values[0] ** 2 - 2.1 * variables_values[0] ** 4 + (1 / 3) * variables_values[0] ** 6 + \
-                 variables_values[0] * variables_values[1] - 4 * variables_values[1] ** 2 + 4 * variables_values[1] ** 4
-    return func_value
+    return fn.michalewicz(variables_values)
 
 
-gwo = grey_wolf_optimizer(pack_size=15, min_values=[-5, -5], max_values=[5, 5], iterations=100)
+gwo = grey_wolf_optimizer(pack_size=15, min_values=[0, 0], max_values=[np.pi, np.pi], iterations=100)

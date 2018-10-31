@@ -141,7 +141,7 @@ def levy(array):
     term3 = (w[d] - 1) ** 2 * (1 + (np.sin(2 * np.pi * w[d])) ** 2)
 
     sum = 0
-    for i in range(d - 1):
+    for i in range(d - 2):
         wi = w[i]
         new = (wi - 1) ** 2 * (1 + 10 * (np.sin(np.pi * wi + 1)) ** 2)
         sum += new
