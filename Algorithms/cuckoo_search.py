@@ -107,5 +107,5 @@ if __name__ == '__main__':
     ac = Ackley()
     cs = CuckooSearch()
     cs.run()
-    cs.save()
+
 
