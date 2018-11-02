@@ -7,24 +7,22 @@ import os
 
 
 class CuckooSearch(Algorithm):
-    def __init__(self, func, birds, discovery_rate, alpha_val, lambda_val, iterations):
-        self.__eval_counts = 0
+    def __init__(self, **kwargs):
 
-        self.func = func
-        self.birds = birds
-        self.discovery_rate = discovery_rate
-        self.alpha_val = alpha_val
-        self.lambda_val = lambda_val
-        self.iterations = iterations
+        super().__init__(**kwargs)
 
-    def target_function(self, position):
-        self.__eval_counts += 1
-        return self.func.eval(position)
+        self.discovery_rate = kwargs.pop('discovery_rate', 0.25)
+        self.alpha_val = kwargs.pop('alpha_val', 0.01)
+        self.lambda_val = kwargs.pop('lambda_val', 1.5)
+
+    # def target_function(self, position):
+    #     self.eval_counts += 1
+    #     return self.func.eval(position)
 
     def initial_position(self):
-        position = pd.DataFrame(np.zeros((self.birds, self.func.dimension)))
+        position = pd.DataFrame(np.zeros((self.population, self.func.dimension)))
         position['Fitness'] = 0.0
-        for i in range(0, self.birds):
+        for i in range(0, self.population):
             for j in range(0, self.func.dimension):
                 position.iloc[i, j] = random.uniform(self.func.min_values[j], self.func.max_values[j])
             position.iloc[i, -1] = self.target_function(position.iloc[i, 0:position.shape[1] - 1])
@@ -38,6 +36,7 @@ class CuckooSearch(Algorithm):
         return x1 * x2
 
     '''choose a bird randomly, return the better one'''
+
     def replace_bird(self, position):
         random_bird = np.random.randint(position.shape[0], size=1)[0]
         new_solution = pd.DataFrame(np.zeros((1, position.shape[1])))
@@ -83,11 +82,11 @@ class CuckooSearch(Algorithm):
 
         return updated_position
 
-    def algorithm(self):
+    def run(self):
         count = 0
         position = self.initial_position()
         best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
-        while count <= self.iterations:
+        while not self.stop_condition(count, best_ind[-1]):
             print("Iteration = ", count, " of ", self.iterations, " f(x) = ", best_ind[-1])
 
             for i in range(0, position.shape[0]):
@@ -98,13 +97,15 @@ class CuckooSearch(Algorithm):
                 best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
             count = count + 1
+        self.best_solution = [[1, 0], 0]
 
-        print(best_ind)
+        return best_ind
 
 
 if __name__ == '__main__':
     from benchmark.Benchmark import Ackley
 
-    func = Ackley()
-    cs = CuckooSearch(func, 20, 0.25, 0.01, 1.5, 200)
-    cs.algorithm()
+    ac = Ackley()
+    cs = CuckooSearch()
+    cs.run()
+    cs.save()

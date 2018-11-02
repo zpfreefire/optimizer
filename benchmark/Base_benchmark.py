@@ -5,8 +5,10 @@ class Benchmarks:
         self.dimension = dimension
 
     def get_optimum(self):
-        return 'optimum: '
+        # return 'optimum: '
+        pass
 
     @staticmethod
     def eval(**kwargs):
-        return 'eval'
+        # return 'eval'
+        pass
