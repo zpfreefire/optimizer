@@ -1,4 +1,4 @@
-from algorithm import Algorithm
+from Algorithms.algorithm import Algorithm
 import pandas as pd
 import numpy as np
 import random

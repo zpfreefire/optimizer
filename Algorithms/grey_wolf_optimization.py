@@ -2,10 +2,9 @@ import numpy  as np
 import os
 import pandas as pd
 import random
-import function as fn
+from benchmark import function as fn
 
 
-# Function: Initialize Variables
 def initial_position(pack_size=5, min_values=[-5, -5], max_values=[5, 5]):
     position = pd.DataFrame(np.zeros((pack_size, len(min_values))))
     position['Fitness'] = 0.0
@@ -16,7 +15,6 @@ def initial_position(pack_size=5, min_values=[-5, -5], max_values=[5, 5]):
     return position
 
 
-# Function: Initialize Alpha
 def alpha_position(dimension=2):
     alpha = pd.DataFrame(np.zeros((1, dimension)))
     alpha['Fitness'] = 0.0
@@ -26,7 +24,6 @@ def alpha_position(dimension=2):
     return alpha
 
 
-# Function: Initialize Beta
 def beta_position(dimension=2):
     beta = pd.DataFrame(np.zeros((1, dimension)))
     beta['Fitness'] = 0.0
@@ -36,7 +33,6 @@ def beta_position(dimension=2):
     return beta
 
 
-# Function: Initialize Delta
 def delta_position(dimension=2):
     delta = pd.DataFrame(np.zeros((1, dimension)))
     delta['Fitness'] = 0.0
@@ -46,7 +42,6 @@ def delta_position(dimension=2):
     return delta
 
 
-# Function: Updtade Pack by Fitness
 def update_pack(position, alpha, beta, delta):
     updated_position = position.copy(deep=True)
     for i in range(0, position.shape[0]):
@@ -63,7 +58,6 @@ def update_pack(position, alpha, beta, delta):
     return alpha, beta, delta
 
 
-# Function: Updtade Position
 def update_position(position, alpha, beta, delta, a_linear_component=2, min_values=[-5, -5], max_values=[5, 5]):
     updated_position = position.copy(deep=True)
 

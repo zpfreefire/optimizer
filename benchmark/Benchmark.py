@@ -44,7 +44,3 @@ class Bukin6(Benchmarks):
         fitness = term1 + term2
         return fitness
 
-
-class Crossit(Benchmarks):
-    def __init__(self, min_values=[-15, -3], max_values=[-5, 3]):
-        super(Crossit, self).__init__(min_values, max_values)

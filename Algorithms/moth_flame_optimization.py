@@ -4,7 +4,8 @@ import numpy  as np
 import os
 import pandas as pd
 import random
-import function as fn
+from benchmark import function as fn
+
 
 # Function: Initialize Variables
 def initial_moths(swarm_size=3, min_values=[-5, -5], max_values=[5, 5]):

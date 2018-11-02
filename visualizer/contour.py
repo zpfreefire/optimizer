@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-import function as fn
+from benchmark import function as fn
 
 filename = "../statistics/cs/after50/2018-10-16_11:44:25.csv"
 

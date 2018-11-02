@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import random
 
-import function as fn
+from benchmark import function as fn
 
 
 def initial_position(swarm_size=3, min_values=[-5, -5], max_values=[5, 5]):
