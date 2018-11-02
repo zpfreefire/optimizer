@@ -15,10 +15,6 @@ class CuckooSearch(Algorithm):
         self.alpha_val = kwargs.pop('alpha_val', 0.01)
         self.lambda_val = kwargs.pop('lambda_val', 1.5)
 
-    # def target_function(self, position):
-    #     self.eval_counts += 1
-    #     return self.func.eval(position)
-
     def initial_position(self):
         position = pd.DataFrame(np.zeros((self.population, self.func.dimension)))
         position['Fitness'] = 0.0
@@ -96,8 +92,11 @@ class CuckooSearch(Algorithm):
             if best_ind[-1] > position.iloc[position['Fitness'].idxmin(), :][-1]:
                 best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
+            self.current_sulotion.append(best_ind[-1])
+
             count = count + 1
-        self.best_solution = [[1, 0], 0]
+
+        self.best_solution = best_ind
 
         return best_ind
 

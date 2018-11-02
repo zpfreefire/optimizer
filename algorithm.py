@@ -14,11 +14,12 @@ class Algorithm(metaclass=abc.ABCMeta):
     def __init__(self, **kwargs):
         self.func = kwargs.pop('func', Ackley())
         self.population = kwargs.pop('population', 50)
-        self.iterations = kwargs.pop('iterations', 5)
+        self.iterations = kwargs.pop('iterations', 200)
         self.precision = kwargs.pop('precision', 0.0001)
         self.eval_counter = 0
-        self.best_solution = [[0, 0], 1 / 3]
+        self.best_solution = []
         self.current_sulotion = []
+
 
     @abc.abstractmethod
     def initial_position(self):
@@ -42,6 +43,7 @@ class Algorithm(metaclass=abc.ABCMeta):
     def best_output(self):
         logging.info("coordinate: %s,values: %s" % (str(self.best_solution[0]), str(self.best_solution[1])))
 
+
     def save(self):
         time = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
         path = "../statistics/%s/%s" % (self.__class__.__name__, self.func.__class__.__name__)
@@ -50,7 +52,7 @@ class Algorithm(metaclass=abc.ABCMeta):
             os.makedirs(path)
 
         filename = ("%s/%s.csv" % (path, time))
-        f = open(filename, "a+", newline="")
+        f = open(filename, "w", newline="")
         writer = csv.writer(f)
         for row in self.current_sulotion:
             writer.writerow(row)
