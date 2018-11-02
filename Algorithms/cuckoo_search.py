@@ -92,7 +92,7 @@ class CuckooSearch(Algorithm):
             if best_ind[-1] > position.iloc[position['Fitness'].idxmin(), :][-1]:
                 best_ind = position.iloc[position['Fitness'].idxmin(), :].copy(deep=True)
 
-            self.current_sulotion.append(best_ind[-1])
+            self.current_sulotion.append(str(best_ind[-1]))
 
             count = count + 1
 
@@ -108,3 +108,4 @@ if __name__ == '__main__':
     cs = CuckooSearch()
     cs.run()
     cs.save()
+

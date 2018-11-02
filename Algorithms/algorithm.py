@@ -14,7 +14,7 @@ class Algorithm(metaclass=abc.ABCMeta):
     def __init__(self, **kwargs):
         self.func = kwargs.pop('func', Ackley())
         self.population = kwargs.pop('population', 50)
-        self.iterations = kwargs.pop('iterations', 200)
+        self.iterations = kwargs.pop('iterations', 5)
         self.precision = kwargs.pop('precision', 0.0001)
         self.eval_counter = 0
         self.best_solution = []
