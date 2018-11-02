@@ -1,22 +1,16 @@
 import numpy as np
+from benchmark.Benchmark import Benchmarks
 
 
-class Ackley:
+class Ackley(Benchmarks):
     def __init__(self, min_values=[-32.768] * 2, max_values=[32.768] * 2, dimension=2):
-        self.min_values = min_values
-        self.max_values = max_values
-        self.dimension = dimension
+        super(Ackley, self).__init__(min_values, max_values, dimension)
 
     def get_optimum(self):
         return [0] * self.dimension, 0
 
     @staticmethod
     def eval(array, a=20, b=0.2, c=2 * np.pi):
-        '''
-        at d=2 : xi ∈ [-32.768, 32.768] , f([0,0]) = 4.440892098500626e-16
-        at d=5 : xi ∈ [-32.768, 32.768] , f([0,0,0,0,0]) = 4.440892098500626e-16
-        '''
-
         d = len(array)
 
         sum1 = 0

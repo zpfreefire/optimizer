@@ -1,16 +1,16 @@
-class Algorithm:
-    def __init__(self, function):
-        self.eval_counter = 0
-        self.function = function
+import abc
+
+
+class Algorithm(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def target_function(self, **kwargs):
         pass
 
+    @abc.abstractmethod
     def initial_position(self):
         pass
 
-    def target_function(self, position):
-        self.eval_counter += 1
-        return function.eval(position)
-        pass
-
-    def Algorithm(self):
+    @abc.abstractmethod
+    def algorithm(self):
         pass
