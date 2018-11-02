@@ -37,6 +37,7 @@ class CuckooSearch(Algorithm):
             -math.log(random.uniform(0.0, 1.0)))), ((2.0 - self.lambda_val) / (self.lambda_val - 1.0)))
         return x1 * x2
 
+    '''choose a bird randomly, return the better one'''
     def replace_bird(self, position):
         random_bird = np.random.randint(position.shape[0], size=1)[0]
         new_solution = pd.DataFrame(np.zeros((1, position.shape[1])))
@@ -102,7 +103,7 @@ class CuckooSearch(Algorithm):
 
 
 if __name__ == '__main__':
-    from benchmark.Ackley import Ackley
+    from benchmark.Benchmark import Ackley
 
     func = Ackley()
     cs = CuckooSearch(func, 20, 0.25, 0.01, 1.5, 200)
